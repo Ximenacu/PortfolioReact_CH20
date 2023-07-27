@@ -1,18 +1,9 @@
-import React, { useState } from 'react';
 import img1 from '../images/IMG_1097.jpg'; 
 import '../App.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faHtml5, faCss3Alt, faJs, faReact,faBootstrap,  faNodeJs} from '@fortawesome/free-brands-svg-icons';
 import { faCode } from '@fortawesome/free-solid-svg-icons';
-import { 
-
-  faDatabase, 
-  
-  faServer, 
-  
-  faCodeBranch,
-  faMicrochip
-} from '@fortawesome/free-solid-svg-icons';
+import { faDatabase, faServer, faCodeBranch,faMicrochip} from '@fortawesome/free-solid-svg-icons';
 
 export default function Welcome() {
 
@@ -20,7 +11,7 @@ export default function Welcome() {
       <div className="body" id="About">
         <h1>Who am I...</h1>
         <div className="flex align">
-          <img src={img1} class="me"></img>
+          <img src={img1} class="me" alt="Avatar" ></img>
           <div className="aboutText" >
             <h3>Mechanical Engineering wasn't for me… Thankfully Web Design is!</h3>
             <p>
@@ -36,7 +27,7 @@ export default function Welcome() {
           </div>
         </div>
 
-        <a  target="_blank" href='https://docs.google.com/document/d/13dxqJOKNmBHbF5E-A77OChpCDPY9XB6bMsyJvzLNpFc/edit?usp=sharing' >
+        <a  target="_blank" rel="noreferrer" href='https://docs.google.com/document/d/13dxqJOKNmBHbF5E-A77OChpCDPY9XB6bMsyJvzLNpFc/edit?usp=sharing' >
           <h3 style={{textAlign: "center"}} >View My Resume</h3>
         </a>
 

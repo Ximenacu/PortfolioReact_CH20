@@ -42,7 +42,7 @@ export default function Welcome() {
         )
 
         const Bb = (
-            <a href={objPointer.linkDeployed} target="_blank" >
+            <a href={objPointer.linkDeployed} target="_blank" rel="noreferrer" >
             <div className='image-container' >
                 <img src={imgTop} class="imgtop"
                 onMouseEnter={() => handleMouseEnter(project)}
@@ -50,7 +50,7 @@ export default function Welcome() {
                 </img>
                         
                 <img src={imgBtm} class="imgbtm"></img>
-                <a id="center" href={objPointer.linkGitH} target="_blank"> 
+                <a id="center" href={objPointer.linkGitH} target="_blank" rel="noreferrer"> 
                     <FontAwesomeIcon icon={faGithub} size="lg" style={{marginRight: "3%"}}/>
                     View Repository
                 </a>
