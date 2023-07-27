@@ -4,6 +4,8 @@ import logo from './logo.svg';
 import './App.css';
 import FileA from './components/fileA';
 import FileB from './components/fileB';
+import FileC from './components/fileC';
+import FileD from './components/fileD';
 
 
 function App() {
@@ -13,7 +15,7 @@ function App() {
     console.log(active);
     document.getElementById(active).setAttribute("src",logo)
     document.getElementById(active).setAttribute("class","App-logo") 
-    const opts = ["imgabt", "imgwrk", "imgctt"];
+    const opts = ["imgabt", "imgwrk", "imgctt", "imgcv"];
     const elements = opts.filter(item => item !== active);
     elements.forEach(element => {
     const elem = document.getElementById(element);
@@ -31,9 +33,10 @@ function App() {
       return <FileB />
     } else if (current === "Contact"){
       handleIcon("imgctt") 
-      return <div className="work" id="Contact" >
-      <h1>Contact</h1>
-    </div>
+      return <FileC />
+    } else if (current === "Resume") {
+      handleIcon("imgcv")
+      return <FileD />
     }
   }
 
@@ -50,19 +53,24 @@ function App() {
           <h2>Web Developer</h2>
         </div>
         <ul className="flex" id="Navbar" >
-          <div className="NavbarIcon">
+          <div className="NavbarIcon" id="About">
             <img id="imgabt"/>
-            <a href="#Navbar" onClick={() => Change('About me')}>About me</a>
+            <a href="#About" onClick={() => Change('About me')}>About me</a>
           </div>
           
-          <div className="NavbarIcon">
+          <div className="NavbarIcon" id="MyWork" >
             <img id="imgwrk"/>
-            <a href="#Navbar" onClick={() => Change('My Work')}>My Work</a>
+            <a href="#MyWork" onClick={() => Change('My Work')}>My Work</a>
           </div>
 
-          <div className="NavbarIcon" >
+          <div className="NavbarIcon" id="Contact" >
             <img id="imgctt"/>
-            <a href="#Navbar" onClick={() => Change('Contact')}>Contact</a>
+            <a href="#Contact" onClick={() => Change('Contact')}>Contact</a>
+          </div>
+
+          <div className="NavbarIcon" id="Resume" >
+            <img id="imgcv"/>
+            <a href="#Resume" onClick={() => Change('Resume')}>Resume</a>
           </div>
         </ul>
         {/* <a
