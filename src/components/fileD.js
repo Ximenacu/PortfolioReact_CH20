@@ -1,9 +1,10 @@
+import 'bootstrap/dist/css/bootstrap.min.css';
 import '../App.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faHtml5, faCss3Alt, faJs, faReact,faBootstrap,  faNodeJs} from '@fortawesome/free-brands-svg-icons';
 import { faCode } from '@fortawesome/free-solid-svg-icons';
 import { faDatabase, faServer, faCodeBranch,faMicrochip} from '@fortawesome/free-solid-svg-icons';
-import 'bootstrap/dist/css/bootstrap.min.css';
+
 
 
 export default function Welcome() {
@@ -23,7 +24,7 @@ export default function Welcome() {
                 </div>
             </div>
 
-            <div style={{marginBottom: "6%"}} >
+            <div style={{margin: "3% 0"}} >
                 <h3 style={{textAlign: "center"}}>Skills</h3>
                 <div className='flex align' id="skills" >
                 {/* HTML */}
@@ -53,8 +54,9 @@ export default function Welcome() {
                 </div>
             </div>
 
-            <a className="btn btn-secondary btn-lg"
-            href="https://docs.google.com/document/d/13dxqJOKNmBHbF5E-A77OChpCDPY9XB6bMsyJvzLNpFc/edit?usp=sharing"
+            <a style={{margin:"4% 0% 0% 42%"}} className="btn btn-secondary btn-lg"
+            // href="https://github.com/Ximenacu/PortfolioReact_CH20/blob/main/public/RESUME%20XC.pdf"
+            href="https://raw.githubusercontent.com/Ximenacu/PortfolioReact_CH20/main/RESUME%20XC.pdf"
             download="XimenaCuResume.pdf">
             Resume Download
             </a>

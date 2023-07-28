@@ -1,11 +1,14 @@
 import React, { useState } from 'react';
 import logo from './logo.svg';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faGithub, faLinkedin, faTwitter } from '@fortawesome/free-brands-svg-icons';
 
 import './App.css';
 import FileA from './components/fileA';
 import FileB from './components/fileB';
 import FileC from './components/fileC';
 import FileD from './components/fileD';
+import { faMailBulk, faMailForward } from '@fortawesome/free-solid-svg-icons';
 
 
 function App() {
@@ -37,6 +40,8 @@ function App() {
     } else if (current === "Resume") {
       handleIcon("imgcv")
       return <FileD />
+    } else {
+      return <h2 style={{textAlign:"center"}} >Welcome!</h2>
     }
   }
 
@@ -55,40 +60,45 @@ function App() {
         <ul className="flex" id="Navbar" >
           <div className="NavbarIcon" id="About">
             <img id="imgabt"/>
-            <a href="#About" onClick={() => Change('About me')}>About me</a>
+            <a className="linkk" href="#About" onClick={() => Change('About me')}>About me</a>
           </div>
           
           <div className="NavbarIcon" id="MyWork" >
             <img id="imgwrk"/>
-            <a href="#MyWork" onClick={() => Change('My Work')}>My Work</a>
+            <a className="linkk" href="#MyWork" onClick={() => Change('My Work')}>My Work</a>
           </div>
 
           <div className="NavbarIcon" id="Contact" >
             <img id="imgctt"/>
-            <a href="#Contact" onClick={() => Change('Contact')}>Contact</a>
+            <a className="linkk" href="#Contact" onClick={() => Change('Contact')}>Contact</a>
           </div>
 
           <div className="NavbarIcon" id="Resume" >
             <img id="imgcv"/>
-            <a href="#Resume" onClick={() => Change('Resume')}>Resume</a>
+            <a className="linkk" href="#Resume" onClick={() => Change('Resume')}>Resume</a>
           </div>
         </ul>
-        {/* <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a> */}
       </header>
 
 
         {currentPage()}
 
 
-      <footer>
-        <p>By Ximena</p>
+      <footer className='flex align' style={{justifyContent:"space-evenly"}}>
+        {/* <div className='flex align' >  */}
+          <p>Visit me at: </p>
+          <a class="linkk" style={{margin: "3%"}} href='https://github.com/Ximenacu' target="_blank" rel="noreferrer">
+            <FontAwesomeIcon icon={faGithub} size="lg" style={{marginRight: "1%"}}/>
+            XimenaCu
+          </a> 
+          <a class="linkk" style={{margin: "3%", whiteSpace: "nowrap"}} href='https://www.linkedin.com/in/ximenacu/' target="_blank" rel="noreferrer" >
+            <FontAwesomeIcon icon={faLinkedin} size="lg" style={{marginRight: "1%"}} />
+            Ximena Fernández del Castillo Cu</a>
+          <a class="linkk" style={{margin: "3%"}} href='https://twitter.com/cu1234567891011' target="_blank" rel="noreferrer" >
+            <FontAwesomeIcon icon={faTwitter} size="lg" style={{marginRight: "1%"}}/>
+            @cu12345
+          </a>
+        {/* </div> */}
       </footer>
     </div>
   );

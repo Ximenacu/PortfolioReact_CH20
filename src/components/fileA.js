@@ -1,19 +1,23 @@
 import img1 from '../images/IMG_1097.jpg'; 
 import '../App.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faHtml5, faCss3Alt, faJs, faReact,faBootstrap,  faNodeJs} from '@fortawesome/free-brands-svg-icons';
+// import { faHtml5, faCss3Alt, faJs, faReact,faBootstrap,  faNodeJs} from '@fortawesome/free-brands-svg-icons';
 import { faCode } from '@fortawesome/free-solid-svg-icons';
-import { faDatabase, faServer, faCodeBranch,faMicrochip} from '@fortawesome/free-solid-svg-icons';
+// import { faDatabase, faServer, faCodeBranch,faMicrochip} from '@fortawesome/free-solid-svg-icons';
 
 export default function Welcome() {
 
     return (
       <div className="body" id="About">
-        <h1>Who am I...</h1>
+        <h1 style={{marginBottom:"1%"}}>About me...</h1>
         <div className="flex align">
           <img src={img1} class="me" alt="Avatar" ></img>
           <div className="aboutText" >
-            <h3>Mechanical Engineering wasn't for me… Thankfully Web Design is!</h3>
+            {/* Generic Code */}
+            <div className='flex' style={{marginBottom:"2%"}} >
+              <FontAwesomeIcon icon={faCode} size="4x" style={{marginRight:"3%"}}/> 
+              <h3>Mechanical Engineering wasn't for me… Thankfully Web Design is!</h3>
+            </div>
             <p>
               Hello! My name is Ximena. I am a Mexican Web Developer with a background in Engineering, Math, English, and Teaching all the latter.
               I decided to make a career switch in 2022 after working as a Design Engineer for a year. It was then that I realized coding allowed me 
@@ -27,36 +31,9 @@ export default function Welcome() {
           </div>
         </div>
 
-        <a  target="_blank" rel="noreferrer" href='https://docs.google.com/document/d/13dxqJOKNmBHbF5E-A77OChpCDPY9XB6bMsyJvzLNpFc/edit?usp=sharing' >
-          <h3 style={{textAlign: "center"}} >View My Resume</h3>
-        </a>
 
-        <div className='flex align' id="skills" >
-          {/* HTML */}
-          <FontAwesomeIcon icon={faHtml5} size="4x" /> 
-          {/* CSS */}
-          <FontAwesomeIcon icon={faCss3Alt} size="4x"/> 
-          {/* JS */}
-          <FontAwesomeIcon icon={faJs} size="4x" /> 
-          {/* React */}
-          <FontAwesomeIcon icon={faReact} size="4x" /> 
-          {/* Node */}
-          <FontAwesomeIcon icon={faNodeJs} size="4x" /> 
-          {/* SQL */}
-          <FontAwesomeIcon icon={faDatabase} size="4x"/> 
-          {/* Generic Code */}
-          <FontAwesomeIcon icon={faCode} size="4x"/> 
-          {/* Express */}
-          <FontAwesomeIcon icon={faServer} size="4x" /> 
-          {/* Bootstrap */}
-          <FontAwesomeIcon icon={faBootstrap} size="4x" /> 
-          {/* MVC */}
-          <FontAwesomeIcon icon={faCodeBranch} size="4x" /> 
-          {/* C++ */}
-          {/* <FontAwesomeIcon icon={faCPlusPlus} size="4x" />  */}
-          {/* Arduino */}
-          <FontAwesomeIcon icon={faMicrochip} size="4x" /> 
-        </div>
+
+      
 
         
       </div>

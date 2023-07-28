@@ -42,7 +42,7 @@ export default function Welcome() {
         )
 
         const Bb = (
-            <a href={objPointer.linkDeployed} target="_blank" rel="noreferrer" >
+            <a className="linkk" href={objPointer.linkDeployed} target="_blank" rel="noreferrer" >
             <div className='image-container' >
                 <img src={imgTop} class="imgtop"
                 onMouseEnter={() => handleMouseEnter(project)}
@@ -50,7 +50,7 @@ export default function Welcome() {
                 </img>
                         
                 <img src={imgBtm} class="imgbtm"></img>
-                <a id="center" href={objPointer.linkGitH} target="_blank" rel="noreferrer"> 
+                <a className="linkk" style={{textAlign: "center", margin: "3% 0%"}} href={objPointer.linkGitH} target="_blank" rel="noreferrer"> 
                     <FontAwesomeIcon icon={faGithub} size="lg" style={{marginRight: "3%"}}/>
                     View Repository
                 </a>
@@ -78,8 +78,8 @@ export default function Welcome() {
 
     return (
         <div className="body" id="MyWork">
-            <h1>My work</h1>
-            <p>Some of my work. Enjoy</p>
+            <h1 style={{color:"white"}} >My work</h1>
+            <p style={{color:"white"}}>Some of my work. Enjoy</p>
             <div className="box" >
                 {/* ---------- 1 */}
                 {leWork('non', img3, 'project1', img6)}

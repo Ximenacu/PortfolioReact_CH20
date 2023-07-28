@@ -3,12 +3,16 @@
   flex-direction: column;
   min-height: 100vh;
   justify-content: space-between;
-  background-color: rgb(243, 242, 242);
+  /* background-color: rgb(243, 242, 242); */
+  background: linear-gradient(#292c30, rgb(172, 170, 170), white); 
+  /* background: linear-gradient( rgba(33,47,18,1) 0%, rgba(198,204,179,1) 50%, rgba(33,47,18,1) 100%); */
+  /* background: linear-gradient( rgba(20,23,27,1) 0%, rgba(198,204,179,1) 50%, rgba(66,70,75,1) 100%); */
 }
 
 .App-logo {
   height: 5vmin;
   pointer-events: none;
+  word-wrap:break-word;
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -19,8 +23,8 @@
 
 .App-header {
   /* background-color: #14171b; */
-  background: linear-gradient(#14171b, rgb(243, 242, 242));
-  min-height: 60vh;
+  /* background: linear-gradient(#14171b, rgb(243, 242, 242)); */
+  min-height: 40vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -29,9 +33,6 @@
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
-}
 
 @keyframes App-logo-spin {
   from {
@@ -55,21 +56,23 @@
 #Navbar{
   width: 100vh;
   justify-content:space-evenly;
-  padding-top: 3%;
+  /* background-color: red; */
+  
 }
 
 .NavbarIcon{
   display: flex;
   align-items: center;
+  padding-top: 5%;
 }
 
-a{
+.linkk{
   text-decoration: none;
   color: #14171b;
 }
 
 footer{
-  /* background: linear-gradient(rgb(243, 242, 242), #14171b); */
+  /* background: linear-gradient(rgb(243, 242, 242),rgb(172, 172, 172), #3c3f44); */
   text-align: center;
 }
 
@@ -114,10 +117,7 @@ footer{
 .lilbox h2{
   text-align: center;
 }
-#center{
-  text-align: center;
-  margin: 3% 0%;
-}
+
 .image-container{
   display: flex;
   flex-direction: column;
@@ -153,4 +153,20 @@ footer{
 
 img{
   border-radius: 10px;
+}
+
+.form{
+  background-color: rgb(163, 161, 161);
+  border-radius: 10px;
+  padding: 3%;
+  width: 80vh;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.sect{
+  margin-bottom: 3%;
+}
+
+.error{
+  color:red;
 }
