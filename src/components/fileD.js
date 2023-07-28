@@ -53,11 +53,11 @@ export default function Welcome() {
                 </div>
             </div>
 
-            <button className={`btn btn-secondary btn-lg"`} >Resume Download</button>
-
-            {/* <a  target="_blank" href='https://docs.google.com/document/d/13dxqJOKNmBHbF5E-A77OChpCDPY9XB6bMsyJvzLNpFc/edit?usp=sharing' >
-            <h3 style={{textAlign: "center"}} >View My Resume</h3>
-            </a> */}
+            <a className="btn btn-secondary btn-lg"
+            href="https://docs.google.com/document/d/13dxqJOKNmBHbF5E-A77OChpCDPY9XB6bMsyJvzLNpFc/edit?usp=sharing"
+            download="XimenaCuResume.pdf">
+            Resume Download
+            </a>
 
         </div>
       
